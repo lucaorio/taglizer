@@ -19,13 +19,13 @@ Given a very specific folder/file structure:
 - Discography
   - Artist
     - Album
-      - Song (flac|mp3|opus)
-      - Song (flac|mp3|opus)
+      - Track (flac|mp3|opus)
+      - Track (flac|mp3|opus)
     - Album
-      - Song (flac|mp3|opus)
+      - Track (flac|mp3|opus)
   - Artist
-      - Album
-      - Song (flac|mp3|opus)
+    - Album
+      - Track (flac|mp3|opus)
   ... etc
 ```
 
