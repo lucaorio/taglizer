@@ -1,0 +1,25 @@
+{
+  "name": "taglizer",
+  "description": "Music library tag analyzer",
+  "version": "1.0.0",
+  "author": "Luca Orio <luca.o@me.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "chalk": "^3.0.0",
+    "directory-tree": "^2.2.4",
+    "eslint": "^6.7.2",
+    "fs-extra": "^8.1.0",
+    "music-metadata": "^6.3.4",
+    "prettier": "^1.19.1",
+    "pug": "^2.0.4",
+    "untildify": "^4.0.0"
+  },
+  "scripts": {
+    "build": "node ./analyze/index.js"
+  },
+  "config": {
+    "root": "~/Discography",
+    "output": "./output/discography.html"
+  }
+}

@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+  head
+    title= taglizer
+    style.
+      body { padding: 24px; font-family: sans-serif; }
+      table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+      th { background-color: #ededed; text-align: left; }
+      td { white-space: nowrap; text-overflow:ellipsis; overflow: hidden; }
+      table, th, td { padding: 4px; border: 1px solid #ccc; }
+      .err { background-color: red; color: white; }
+  body
+    each artist, i in discography
+      h2= artist.name
+      each album, k in artist.albums
+        h3= album.name
+        table
+          thead
+            tr
+              th= 'Title'
+              th= 'Album'
+              th= 'Artist'
+              th= 'Album Artist'
+              th= 'Track Number'
+              th= 'Total Tracks'
+              th= 'Disc Number'
+              th= 'Total Discs'
+              th= 'Date'
+              th= 'Label'
+              th= 'Genre'
+              th= 'Cover'
+          tbody
+            each track, j in album.tracks
+              tr
+                td(class=!track.tags.title && "err") #{track.tags.title}
+                td(class=!track.tags.album && "err") #{track.tags.album}
+                td(class=!track.tags.artist && "err") #{track.tags.artist}
+                td(class=!track.tags.albumartist && "err") #{track.tags.albumartist}
+                td(class=!track.tags.track.no && "err") #{track.tags.track.no}
+                td(class=!track.tags.track.of && "err") #{track.tags.track.of}
+                td(class=!track.tags.disk.no && "err") #{track.tags.disk.no}
+                td(class=!track.tags.disk.of && "err") #{track.tags.disk.of}
+                td(class=!track.tags.year && "err") #{track.tags.year}
+                td(class=!track.tags.label && "err") #{track.tags.label}
+                td(class=!track.tags.genre && "err") #{track.tags.genre}
+                td(class=!track.tags.picture && "err") #{track.tags.picture && track.tags.picture[0].data}
