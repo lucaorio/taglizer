@@ -86,7 +86,7 @@ HTML generated succesfully at ./output/discography.html
 
 ## License
 
-![https://github.com/lucaorio/sketch-plugin-boilerplate/blob/master/license](https://img.shields.io/badge/license-MIT-blue.svg)
+![https://github.com/lucaorio/taglizer/blob/master/license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ---
 
