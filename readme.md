@@ -56,7 +56,7 @@ Feel free to fork and customize these scripts as you see fit, but keep in mind I
 
 ## Usage
 
-Clone and install the dependencies:
+Clone this repository and install dependencies:
 
 ```shell
 git clone http://github.com/lucaorio/taglizer && cd taglizer
