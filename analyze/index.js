@@ -14,6 +14,6 @@ const getDiscography = require('./get-discography')
   const html = compile({ discography: discography })
 
   // save the results in a html
-  await fs.outputFile(pkg.config.output, html)
+  await fs.outputFile(untildify(pkg.config.output), html)
   console.log(chalk.green(`HTML generated succesfully at ${pkg.config.output}`))
 })()
