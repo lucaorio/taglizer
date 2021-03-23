@@ -37,11 +37,9 @@ Album
 Artist
 Album Artist
 Track Number
-Total Tracks
 Disc Number
-Total Discs
-Date
-Label
+Year
+Label / Publisher
 Genre
 Cover (true or false)
 ```
